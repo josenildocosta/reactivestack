@@ -4,7 +4,7 @@ pipeline {
     stage('Server') {
       steps {
         sh '''echo "Biulding"
-sudo ./mvnw clean install '''
+./mvnw clean install '''
       }
     }
   }
