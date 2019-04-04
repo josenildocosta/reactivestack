@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'maven, mongo'
+      image 'mongo'
     }
 
   }
