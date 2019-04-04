@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'mongo'
+      image 'maven'
     }
 
   }
@@ -9,7 +9,7 @@ pipeline {
     stage('Server') {
       steps {
         sh '''echo "Biulding"
-mvn clean install '''
+mvn clean package'''
       }
     }
     stage('deploy') {
